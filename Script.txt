@@ -1,0 +1,19 @@
+-- criando banco
+CREATE SCHEMA 'dbregulus' DEFAULT CHARACTER SET utf8 ;
+
+-- SELECIOANDO O BANCO
+
+USE dbRegulus;
+
+-- criando tabela
+
+CREATE TABLE tb_usuarios(
+idUsuario INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	
+descLogin VARCHAR(64) NOT NULL,
+
+	descSenha VARCHAR(256) NOT NULL,
+
+	dtCadastro TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP()
+
+);
